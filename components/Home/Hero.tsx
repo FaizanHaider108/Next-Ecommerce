@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div className='w-full h-[calc(100vh-12vh)] flex justify-center flex-col'>
+    <div className='h-[40vh] md:h-[80vh] flex items-center justify-between'>
         {/* grid */}
         <div className="w-4/5 mx-auto grid items-center grid-cols-1 lg:grid-cols-2 gap-12">
             <div>

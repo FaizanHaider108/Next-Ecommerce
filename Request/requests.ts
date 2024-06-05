@@ -17,3 +17,16 @@ export async function getAllProducts() {
     console.log(error);
   }
 }
+
+
+
+export async function getSingleProduct(id:string){
+    const singleProduct = await fetch(`https://fakestoreapi.com/products/${id}`)
+    return singleProduct.json();
+  }
+
+
+export async function getProductByCategory(category: string) {
+     const productCate = await fetch(`https://fakestoreapi.com/products/category/${category}`)
+        return productCate.json()
+      }
