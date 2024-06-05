@@ -10,7 +10,7 @@ const categories: string[] = await getAllCategory();
         {/* Grid */}
         <div className="mt-12 w-4/5 mx-auto grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
          {categories.map((category) =>  {
-            return <div className="p-6 rounded-lg cursor-pointer text-center hover:scale-110 transition-all duration-300 bg-gray-200 shadow-md uppercase">
+            return <div key={category} className="p-6 rounded-lg cursor-pointer text-center hover:scale-110 transition-all duration-300 bg-gray-200 shadow-md uppercase">
                 <h1 className="text-sm sm:text-base md:text-lg font-bold">{category}</h1>
             </div>
          }) }

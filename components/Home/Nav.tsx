@@ -4,6 +4,7 @@ import SearchBox from "../helper/SearchBox";
 import { HeartIcon, UserIcon } from "lucide-react";
 import ShoppingCartBtn from "../helper/ShoppingCartBtn";
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import Image from "next/image";
 
 const Nav = () => {
   return (
@@ -11,7 +12,7 @@ const Nav = () => {
       <div className="flex items-center justify-between w-[95%] md:w-4/5 mx-auto h-full">
         {/* logo */}
         <Link href={"/"}>
-          <img src="/images/logo.png" alt="Logo" height={140} width={140} />
+          <Image src="/images/logo.png" alt="Logo" height={140} width={140} />
         </Link>
         {/* icons */}
         <div className="flex items-center space-x-6">
