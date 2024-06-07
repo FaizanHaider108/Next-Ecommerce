@@ -1,25 +1,28 @@
-import { Product } from "@/types"
+"use client"
+import { Product } from "@/types";
 import { Heart, ShoppingBag, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { addItem } from "@/store/CartSlice";
-import { RootState } from "@/store/store";
-
+// Ensure this path is correct
 
 type ProductProps = {
-    product: Product
+    product: Product;
 }
 
-const ProductCard = ({product}:ProductProps) => {
+const ProductCard = ({ product }: ProductProps) => {
+
     const num = Math.round(product.rating.rate);
     const dispatch = useDispatch();
-    const ratingArray =  new Array(num).fill(0);
+    const ratingArray = new Array(num).fill(0);
+
     // add to cart
-    const addCart = (product:Product) => {
-      dispatch(addItem(product))
-    }
+    const addCart = (product: Product) => {
+       
+        dispatch(addItem(product));
+    };
   return (
     <div className="p-4"> 
     <div className="w-[200px] h-[150px] ">
