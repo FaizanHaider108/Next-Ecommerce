@@ -7,7 +7,7 @@ const Footer = () => {
         {/* 1st part */}
         <div>
           <h1 className="text-[25px] uppercase font-semibold text-black mb-4">
-            WOW Shop
+          PharmaCure
           </h1>
           <p className="text-sm text-black opacity-60">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
