@@ -9,9 +9,9 @@ const Hero = () => {
         <div className="w-4/5 mx-auto grid items-center grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
                 <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-black font-bold uppercase'>
-                    Mega sale <span className='text-red-600'>Special</span> offer upto <span className='text-orange-500'>60%</span> off
+                Revolutionizing Healthcare, <span className='text-red-600'>One Click </span> <span className='text-orange-500'>at a Time</span> 
                 </h1>
-                <p className='text-sm md:text-base lg:text-lg text-black text-opacity-70 mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quod inventore exercitationem unde officia, molestiae perspiciatis enim odio aut. Odio in consectetur ab voluptate, magnam cumque blanditiis neque animi maxime?</p>
+                <p className='text-sm md:text-base lg:text-lg text-black text-opacity-70 mt-4'>Discover a seamless and convenient way to manage your medications and health needs. With dPharma, you get easy access to a wide range of pharmaceuticals, expert consultations, and timely delivery services, all from the comfort of your home. Join us in transforming healthcare with innovative solutions designed for your well-being.</p>
                 <div className='flex mt-6 items-center space-x-4'>
                     <Button size={"lg"} className='bg-blue-800'>Shop Now</Button>
                     <Button size={"lg"} className=''>Explore More</Button>
