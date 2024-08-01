@@ -9,7 +9,7 @@ import { fakeMedicines } from '@/lib/constants';
 
 const ProductDetails = async ({ params }: { params: { id: string } }) => {
   const id = parseInt(params.id);
-  const SingleProduct: Product = fakeMedicines.find(product => product.id === id);
+  const SingleProduct = fakeMedicines.find(product => product.id === id);
 
   if (!SingleProduct) {
     return <div>Product not found</div>;
